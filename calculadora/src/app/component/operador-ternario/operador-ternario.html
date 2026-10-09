@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="form-box">
+    <!--chamando o metodo resultado(), no forms atraves (ngSubmit)-->
+    <form #frm="ngForm" (ngSubmit)="resultado()">
+      <h2>Salario</h2>
+      <!--INPUT DO PRIMEIRO NUMERO-->
+      <label for="numero1">insira o seu salario</label>
+      <input type="number" name="numero1" id="numero1"  [(ngModel)]="salario" >
+
+
+      <button type="submit">valiadar</button>
+    </form>
+
+
+    <!--iniciando a estrutura condicional-->
+    @if(result){
+      <!--DIV RESULTADO-->
+      <div class="result-display">
+        <p>Resultado: <span id="result">{{ result }}</span></p>
+        <p>vou doar 10%:  <span id="result">R$ {{ porcent }}</span></p>
+      </div>
+    }@else {
+      <div class="result-display">
+        <p>Seu resultado aparecerá aqui.</p>
+      </div>
+    }
+  </div>
+</div>
