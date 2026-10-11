@@ -1,6 +1,6 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { ExVariavelPrimitiva } from './component/ex-variavel-primitiva/ex-variavel-primitiva';
+import { ExSucessor } from './component/ex-sucessor/ex-sucessor';
 
 //IMPORTS DAS CLASSES
 
@@ -8,7 +8,7 @@ import { ExVariavelPrimitiva } from './component/ex-variavel-primitiva/ex-variav
 //NO IMPORTS ADD O NOME DA CLASS EX:  Calculadora, OperadorTernario
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, ExVariavelPrimitiva],
+  imports: [RouterOutlet, ExSucessor],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
