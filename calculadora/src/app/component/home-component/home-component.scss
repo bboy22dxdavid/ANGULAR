@@ -1,0 +1,41 @@
+
+.app-container{
+  padding-top: 100px;
+}
+.sidebar {
+  width: 250px;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+  border-radius: 18px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+/* Destaca o exercício que está aberto na tela */
+.sidebar a.active {
+  background-color: #007bff;
+  color: #0e0d0d;
+  font-weight: bold;
+}
+
+.conteudo {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+}

@@ -1,6 +1,7 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { CalculadoraCigarro } from './component/calculadora-cigarro/calculadora-cigarro';
+
+
 
 
 //IMPORTS DAS CLASSES
@@ -9,7 +10,7 @@ import { CalculadoraCigarro } from './component/calculadora-cigarro/calculadora-
 //NO IMPORTS ADD O NOME DA CLASS EX:  Calculadora, OperadorTernario
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, CalculadoraCigarro],
+  imports: [RouterOutlet, ],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })

@@ -1,0 +1,30 @@
+<div class="app-container">
+  <!-- Menu Lateral de Exercícios -->
+  <aside class="sidebar">
+    <h2>Menu de Exercícios</h2>
+    <ul>
+      <li>
+        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+          🏠 Página Inicial
+        </a>
+      </li>
+      <li>
+        <a routerLink="/calculadora" routerLinkActive="active">
+          🧮 Calculadora Comum
+        </a>
+      </li>
+      <li>
+        <a routerLink="/calculadoraCigaro" routerLinkActive="active">
+          🚬 Custo do Cigarro
+        </a>
+      </li>
+    </ul>
+  </aside>
+
+  <!-- Área onde o exercício selecionado vai aparecer -->
+  <main class="conteudo-principal">
+    <router-outlet></router-outlet>
+  </main>
+</div>
+
+
